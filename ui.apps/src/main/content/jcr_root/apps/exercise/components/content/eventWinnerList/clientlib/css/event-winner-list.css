@@ -1,0 +1,170 @@
+/*events-schedule*/
+.events-winning {
+  padding: 0px 5% 20px;
+}
+.events-winning .text-heading{
+  padding-bottom: 30px;
+}
+.events-schedule .card-comp .card-comp-txt .custom-btn {
+  margin-top: 10px;
+}
+.events-schedule .slick-slider .slick-dots {
+  width: auto;
+  bottom: 15px;
+  right: 15px;
+}
+.events-schedule .tab-comp {
+  margin: 30px 0px 50px;
+}
+.events-schedule .cta-bottom-holder {
+  text-align: center;
+  margin: 50px 0px 20px;
+}
+
+.page-events-individual .rides-overview-details {
+  padding-top: 50px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+
+/*tabs nav [START]*/
+.tab-comp {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.tab-comp ul.nav.nav-tabs {
+  list-style: none;
+  display: block;
+  width: 100%;
+  border-bottom: none;
+  margin-right: 0;
+}
+
+.tab-comp ul.nav.nav-tabs li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.tab-comp ul.nav.nav-tabs li a {
+  color: #000000;
+  display: block;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.tab-comp ul.nav.nav-tabs li a.active {
+  border-bottom: 1px solid #da291c;
+  color: #da291c;
+}
+
+.tab-comp ul.nav.nav-tabs li a:hover {
+  color: #da291c;
+}
+
+.tab-comp ul.nav.nav-tabs li a p {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.tab-comp ul.nav.nav-tabs li a h3 {
+  margin-top: 5px;
+}
+
+/*tabs nav [END]*/
+.tab-content {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.tab-content .tab-pane {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    display: block;
+}
+.tab-content .tab-pane.active {
+    visibility: visible;
+    position: static;
+    left: inherit;
+    top: inherit;
+}
+.event-win-content{
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 0px 0px;
+}
+.event-win-list{
+  float: left;
+  list-style: none;
+  width: 200px;
+}
+.event-win-list li{
+  display: block;
+  margin-bottom: 30px;
+  border:none;
+}
+.event-win-list li h5{
+  color: #4f4f4f;
+}
+.event-win-list li p{
+  margin-top: 5px !important;
+  color: #000;
+
+}
+.event-win-list-img{
+  width: 50%;
+  float: right;
+}
+.eve-day{
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+.eve-day p {
+    font-size: 16px;
+    line-height: 16px;
+}
+.eve-day h3 {
+    margin-top: 5px;
+    font-size: 25px;
+}
+@media screen and (max-width: 767px) {
+.events-schedule .tab-comp {
+    margin: 10px 0px 20px;
+}
+.tab-comp ul.nav.nav-tabs {
+    list-style: none;
+    display: block;
+    width: 100%;
+    border-bottom: none;
+    margin-right: 0;
+    position: static;
+    right: inherit;
+    text-align: center;
+}
+.tab-comp ul.nav.nav-tabs li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.events-schedule {
+    padding-bottom: 0px;
+}
+.event-win-content {
+    padding: 20px 0px 0px;
+}
+.event-win-list {
+    width: 100%;
+}
+.event-win-list-img {
+    display: none;
+}
+}
+
+/*RIDE INNER PAGES [END]*/

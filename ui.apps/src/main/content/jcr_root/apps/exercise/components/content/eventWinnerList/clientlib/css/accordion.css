@@ -1,0 +1,234 @@
+/*faq section start*/
+.faq {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.faq .faq-lh {
+  width: 400px;
+  background: #d5d5d5;
+  float: left;
+  padding-bottom: 50px;
+}
+
+.faq .faq-lh .faq-lh-container {
+  width: 310px;
+  margin: 0 auto;
+  color: #212121;
+  padding-top: 50px;
+}
+
+.faq .faq-lh .faq-lh-container p {
+  margin-top: 20px;
+}
+
+.faq .faq-lh .categorie-holder {
+  margin-top: 20px;
+  position: relative;
+}
+
+.faq .faq-lh .categorie-holder span {
+  display: none;
+  font-size: 18px;
+  color: #212121;
+  font-family: "guardiansans-semibold";
+  position: relative;
+  padding: 10px 15px;
+  border: 1px solid #000;
+}
+
+.faq .faq-lh .categorie-holder span:after {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  content: '\0043';
+  font-family: "reicons";
+  font-size: 14px;
+  padding: 0px;
+}
+
+.faq .faq-lh .nav.nav-tabs {
+  float: none;
+}
+
+.faq .faq-lh .nav.nav-tabs li {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #212121;
+  color: #212121;
+  font-size: 14px;
+}
+
+.faq .faq-lh .nav.nav-tabs li a {
+  text-decoration: none;
+  display: block;
+  color: #212121;
+  position: relative;
+  padding: 20px 0px;
+}
+
+.faq .faq-lh .nav.nav-tabs li a.active {
+  color: #da291c;
+}
+
+.faq .faq-lh .nav.nav-tabs li a.active:before {
+  display: block;
+}
+
+.faq .faq-lh .nav.nav-tabs li a:before {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -10px;
+  content: "\0041";
+  display: none;
+  font-family: "reicons";
+}
+
+.faq .faq-rh {
+  max-width: -webkit-calc(100% - 400px);
+  max-width: -moz-calc(100% - 400px);
+  max-width: calc(100% - 400px);
+  float: left;
+  padding: 50px 5%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 75%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+
+.faq .faq-rh h2 {
+  padding-bottom: 30px;
+}
+
+.accordion {
+  color: #212121;
+}
+.faq .accordion li {
+  padding: 20px 0px;
+}
+.accordion li {
+  border-bottom: 1px solid #212121;
+  color: #212121;
+}
+
+.accordion li .acc-tab {
+  font-size: 22px;
+  padding: 15px 50px 15px 0px;
+  position: relative;
+  font-family: "guardiansans-semibold";
+  cursor: pointer;
+}
+
+.accordion li .acc-tab span {
+  display: block;
+}
+
+.accordion li .acc-tab:after {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -10px;
+  content: '\0043';
+  font-family: "reicons";
+  font-size: 14px;
+}
+
+.accordion li .acc-tab.active:after {
+  content: '\0030';
+}
+
+.accordion li .acc-content {
+  padding-bottom: 20px;
+  display: none;
+}
+
+.accordion li .acc-content p {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .faq .faq-lh {
+    width: 320px;
+  }
+  .faq .faq-lh .faq-lh-container {
+    width: 270px;
+  }
+  .faq .faq-rh {
+    max-width: -webkit-calc(100% - 320px);
+    max-width: -moz-calc(100% - 320px);
+    max-width: calc(100% - 320px);
+    padding: 50px 25px;
+  }
+.accordion li .acc-tab {
+    font-size: 18px;
+    padding: 0px 0px;
+    padding-right: 50px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faq .faq-lh {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .faq .faq-lh .nav.nav-tabs {
+    position: absolute;
+    height: auto;
+    left: 0px;
+    top: 44px;
+    z-index: 1;
+    padding: 0 20px 20px;
+    background: #fff;
+    width: 100%;
+    -webkit-box-shadow: 0 0 20px -6px #000;
+       -moz-box-shadow: 0 0 20px -6px #000;
+            box-shadow: 0 0 20px -6px #000;
+  }
+  .faq .faq-lh .nav.nav-tabs li a {
+    padding: 10px 0px;
+  }
+  .faq .faq-lh .nav.nav-tabs li a.active:before {
+    display: none;
+  }
+  .faq .faq-lh .categorie-holder span {
+    display: block;
+  }
+  .faq .faq-lh .faq-lh-container {
+    width: 100%;
+    padding: 25px;
+  }
+  .faq .faq-lh .nav.nav-tabs {
+    display: none;
+  }
+  .faq .faq-rh {
+    max-width: 100%;
+    padding: 25px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .faq .accordion li {
+    padding: 10px 0px;
+  }
+}
+
+/*faq section end*/

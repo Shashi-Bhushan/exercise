@@ -1,0 +1,5 @@
+#base=js
+jquery.min.js
+bootstrap.min.js
+common.js
+accordion.js
