@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <event-title
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Event Title"
+        sling:message="Event Title"/>
+    <event-image-path
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Event Image Path"
+        sling:message="Event Image Path"/>
+    <event-image-alt-text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Event Image Alternate Text"
+        sling:message="Event Image Alternate Text"/>
+    <event-winner-list
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Event Winners' List"
+        sling:message="Event Winners' List"/>
+    <event-winner-list-desc
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Click ADD to add winner list"
+        sling:message="Click ADD to add winner list"/>
+    <event-winner-name
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Winner Name"
+        sling:message="Winner Name"/>
+    <event-winner-position
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Winner Position"
+        sling:message="Winner Position"/>
+
+</jcr:root>

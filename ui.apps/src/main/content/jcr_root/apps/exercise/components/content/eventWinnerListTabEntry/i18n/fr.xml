@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="fr"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <event-title
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Event Title"
+        sling:message="Titre de l'événement"/>
+    <event-image-path
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Event Image Path"
+        sling:message="Chemin de l'image de l'événement"/>
+    <event-image-alt-text
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Event Image Alternate Text"
+        sling:message="Image de l'événement Autre texte"/>
+    <event-winner-list
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Event Winners' List"
+        sling:message="Liste des gagnants d'événements"/>
+    <event-winner-list-desc
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Click ADD to add winner list"
+        sling:message="Cliquez sur AJOUTER pour ajouter la liste des gagnants"/>
+    <event-winner-name
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Winner Name"
+        sling:message="Nom du gagnant"/>
+    <event-winner-position
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="Winner Position"
+        sling:message="Position du gagnant"/>
+</jcr:root>

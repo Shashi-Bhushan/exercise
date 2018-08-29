@@ -19,13 +19,13 @@
                     <eventImage
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Event Title"
+                        fieldLabel="Event Image Path"
                         rootPath="/content/dam"
                         name="./eventImage"/>
                     <eventImageAltText
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        fieldLabel="Event Title"
+                        fieldLabel="Event Image Alternate Text"
                         rootPath="/content/dam"
                         name="./eventImageAltText"/>
                     <eventWinnerList
@@ -33,7 +33,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                         class="full-width"
                         fieldDescription="Click ADD to add winner list"
-                        fieldLabel="Event Winner List"
+                        fieldLabel="Event Winners' List"
                         composite="{Boolean}true">
                         <field
                             jcr:primaryType="nt:unstructured"
