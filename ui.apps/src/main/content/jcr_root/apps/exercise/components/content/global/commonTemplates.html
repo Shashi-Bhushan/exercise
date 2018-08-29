@@ -1,0 +1,6 @@
+<!--/* template to render anchor tag, appends '.html' to internal page urls, please note that this template only renders anchor tag when both text and url are passed */-->
+<template data-sly-template.anchorTagTemplate="${ @ targetURL,text,class,target}">
+    <sly data-sly-test="${text || targetURL}" data-sly-use.link="${'com.amazon.hr.util.LinkChecker' @ link = targetURL}">
+   	 	<a class="${class}" href="${link.link}" target="${target}" >${text}</a>
+    </sly>
+</template>
