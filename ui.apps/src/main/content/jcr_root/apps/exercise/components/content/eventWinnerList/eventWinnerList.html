@@ -7,7 +7,30 @@
 <sly data-sly-test="${!wcmmode.edit}">
     <sly data-sly-use.eventWinnerList="in.shabhushan.core.components.EventWinnerListModel"/>
 
-    Event Winner list is ${eventWinnerList.eventWinnerListTabs}
+    <h2 class="text-heading">${eventWinnerList.title}</h2>
+
+    <div class="tab-comp">
+        <ul class="nav nav-tabs">
+            <li data-sly-list.tab="${eventWinnerList.eventWinnerListTabs}">
+                <a data-toggle="tab" href="#tab1" class="active show">
+                    <p>Day 01</p>
+                    <h3>18 July</h3>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#tab2">
+                    <p>Day 02</p>
+                    <h3>19 July</h3>
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#tab3">
+                    <p>Day 03</p>
+                    <h3>20 July</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
 </sly>
 
 

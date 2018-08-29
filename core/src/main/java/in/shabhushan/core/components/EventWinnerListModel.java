@@ -10,17 +10,21 @@ import java.util.List;
 
 import static in.shabhushan.core.common.EventWinnerListConstants.EVENT_WINNER_TAB_SUBTITLE_NODE_NAME;
 import static in.shabhushan.core.common.EventWinnerListConstants.EVENT_WINNER_TAB_TITLE_NODE_NAME;
+import static in.shabhushan.core.common.EventWinnerListConstants.EVENT_WINNER_TITLE_NODE_NAME;
 
 /**
  * @author Shashi Bhushan
  */
 public class EventWinnerListModel extends WCMUsePojo {
 
+    private String title;
+
     private List<EventWinnerListTab> eventWinnerListTabs = new ArrayList<>();
 
     @Override
     public void activate() throws Exception {
         Resource parentTab = getResource().getChild("tab");
+        this.title = getResource().getValueMap().get(EVENT_WINNER_TITLE_NODE_NAME, String.class);
 
         parentTab.listChildren().forEachRemaining((Resource tab) -> {
             eventWinnerListTabs.add(getEventWinnerListTab(tab));
@@ -40,5 +44,9 @@ public class EventWinnerListModel extends WCMUsePojo {
 
     public List<EventWinnerListTab> getEventWinnerListTabs() {
         return eventWinnerListTabs;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }
