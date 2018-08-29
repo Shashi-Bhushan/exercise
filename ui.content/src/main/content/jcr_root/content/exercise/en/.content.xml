@@ -27,7 +27,9 @@
                             <entry1
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
-                                eventTitle="Men's 350 Dash">
+                                eventTitle="Men's 350 Dash"
+                                eventImage="/content/dam/exercise/rides-pre-slide-01.jpg"
+                                eventImageAltText="Royal Enfield Event">
                                 <eventWinnerList
                                     jcr:primaryType="nt:unstructured">
                                     <item0
@@ -85,7 +87,8 @@
                             <entry1
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
-                                eventTitle="Men's 350 Dash">
+                                eventTitle="Men's 350 Dash"
+                                eventImageAltText="Royal Enfield Event">
                                 <eventWinnerList
                                     jcr:primaryType="nt:unstructured">
                                     <item0

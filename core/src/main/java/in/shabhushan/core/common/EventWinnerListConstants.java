@@ -9,4 +9,5 @@ public class EventWinnerListConstants {
     public static final String EVENT_WINNER_TITLE_NODE_NAME = "title";
     public static final String EVENT_WINNER_TAB_TITLE_NODE_NAME = "title";
     public static final String EVENT_WINNER_TAB_SUBTITLE_NODE_NAME = "subtitle";
+    public static final String ORIGINAL_RENDITION_PATH = "/jcr:content/renditions/original";
 }

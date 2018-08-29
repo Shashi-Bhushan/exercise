@@ -16,6 +16,18 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Event Title"
                         name="./eventTitle"/>
+                    <eventImage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Event Title"
+                        rootPath="/content/dam"
+                        name="./eventImage"/>
+                    <eventImageAltText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Event Title"
+                        rootPath="/content/dam"
+                        name="./eventImageAltText"/>
                     <eventWinnerList
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"

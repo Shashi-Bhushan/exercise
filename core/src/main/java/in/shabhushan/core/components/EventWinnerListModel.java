@@ -12,9 +12,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-import static in.shabhushan.core.common.EventWinnerListConstants.EVENT_WINNER_TAB_SUBTITLE_NODE_NAME;
-import static in.shabhushan.core.common.EventWinnerListConstants.EVENT_WINNER_TAB_TITLE_NODE_NAME;
-import static in.shabhushan.core.common.EventWinnerListConstants.EVENT_WINNER_TITLE_NODE_NAME;
+import static in.shabhushan.core.common.EventWinnerListConstants.*;
 
 /**
  * @author Shashi Bhushan
@@ -54,6 +52,8 @@ public class EventWinnerListModel extends WCMUsePojo {
             EventWinnerTabEntry eventWinnerTabEntry = new EventWinnerTabEntry();
             ValueMap entryValueMap = entry.getValueMap();
             eventWinnerTabEntry.setEventTitle(entryValueMap.get("eventTitle", String.class));
+            eventWinnerTabEntry.setEventImage(entryValueMap.get("eventImage", String.class) + ORIGINAL_RENDITION_PATH);
+            eventWinnerTabEntry.setEventImageAltText(entryValueMap.get("eventImageAltText", String.class));
 
             List<EventWinnerTabEntryItem> eventWinnerTabEntryItems = new ArrayList<>();
 

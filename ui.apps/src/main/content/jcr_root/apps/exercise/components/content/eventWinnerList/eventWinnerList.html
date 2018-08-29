@@ -6,7 +6,6 @@
 
 <sly data-sly-test="${!wcmmode.edit}">
     <sly data-sly-use.eventWinnerList="in.shabhushan.core.components.EventWinnerListModel"/>
-
     <h2 class="text-heading">${eventWinnerList.title}</h2>
 
     <div class="tab-comp">
@@ -39,7 +38,7 @@
                                         </li>
                                         </sly>
                                     </ul>
-                                    <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
+                                    <div class="event-win-list-img"><img srcset="${tabEntry.eventImage}" alt="${tabEntry.eventImageAltText}"></div>
                                 </div>
                             </div>
                         </li>

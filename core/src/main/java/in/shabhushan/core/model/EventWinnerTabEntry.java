@@ -24,6 +24,8 @@ import java.util.List;
 
 public class EventWinnerTabEntry {
     private String eventTitle;
+    private String eventImage;
+    private String eventImageAltText;
     private List<EventWinnerTabEntryItem> eventWinnerTabEntryItems = new ArrayList<>();
 
     public List<EventWinnerTabEntryItem> getEventWinnerTabEntryItems() {
@@ -40,5 +42,21 @@ public class EventWinnerTabEntry {
 
     public void setEventTitle(String eventTitle) {
         this.eventTitle = eventTitle;
+    }
+
+    public String getEventImage() {
+        return eventImage;
+    }
+
+    public void setEventImage(String eventImage) {
+        this.eventImage = eventImage;
+    }
+
+    public String getEventImageAltText() {
+        return eventImageAltText;
+    }
+
+    public void setEventImageAltText(String eventImageAltText) {
+        this.eventImageAltText = eventImageAltText;
     }
 }
