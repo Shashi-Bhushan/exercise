@@ -14,12 +14,12 @@
                     <title
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Event List Tab Title"
+                        fieldLabel="Tab Title"
                         name="./title"/>
                     <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Event List Tab Subtitle"
+                        fieldLabel="Tab Subtitle"
                         name="./subtitle"/>
                 </items>
             </column>
