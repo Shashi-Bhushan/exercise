@@ -8,15 +8,15 @@
 </sly>
 
 <sly data-sly-test="${!wcmmode.edit}">
-    <sly data-sly-use.eventWinnerList="in.shabhushan.core.components.EventWinnerListModel"/>
+    <sly data-sly-use.eventWinnerList="in.shabhushan.core.slingmodel.EventWinnerList"/>
     <h2 class="text-heading">${eventWinnerList.title}</h2>
 
     <div class="tab-comp">
         <ul class="nav nav-tabs">
-            <sly data-sly-list="${eventWinnerList.eventWinnerTabs}">
+            <sly data-sly-list="${eventWinnerList.tab}">
                 <li>
                     <a data-toggle="tab" href="#tab${itemList.index}">
-                        <p>${item.title}</p>
+                       <p>${item.title}</p>
                         <h3>${item.subtitle}</h3>
                     </a>
                 </li>
@@ -25,20 +25,20 @@
     </div>
 
     <div class="tab-content">
-        <sly data-sly-list="${eventWinnerList.eventWinnerTabs}">
+        <sly data-sly-list="${eventWinnerList.tab}">
             <div id="tab${itemList.index}" class="tab-pane fade">
                 <ul class="accordion">
-                    <sly data-sly-list.tabEntry="${item.eventWinnerTabEntries}">
+                    <sly data-sly-list.tabEntry="${item.tabEntry}">
                         <li class="popular_question">
                             <div class="acc-tab active"><span>${tabEntry.eventTitle}</span></div>
                             <div class="acc-content">
                                 <div class="event-win-content">
                                     <ul class="event-win-list">
-                                        <sly data-sly-list.tabEntryItem="${tabEntry.eventWinnerTabEntryItems}">
+                                        <sly data-sly-list.tabEntryItem="${tabEntry.eventWinnerList}">
                                             <li>
-                                            <h5>${tabEntryItem.name}</h5>
-                                            <p>${tabEntryItem.position}</p>
-                                        </li>
+                                                <h5>${tabEntryItem.name}</h5>
+                                                <p>${tabEntryItem.position}</p>
+                                            </li>
                                         </sly>
                                     </ul>
                                     <div class="event-win-list-img"><img srcset="${tabEntry.eventImage}" alt="${tabEntry.eventImageAltText}"></div>
