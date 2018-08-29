@@ -11,7 +11,8 @@
             sling:resourceType="wcm/foundation/components/parsys">
             <eventWinner
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="exercise/components/content/eventWinnerList">
+                sling:resourceType="exercise/components/content/eventWinnerList"
+                title="Dirt Track Winner list from Rider Mania 2017">
                 <tab
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/responsivegrid">
@@ -25,7 +26,8 @@
                             sling:resourceType="wcm/foundation/components/responsivegrid">
                             <entry1
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry">
+                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
+                                eventTitle="Men's 350 Dash">
                                 <eventWinnerList
                                     jcr:primaryType="nt:unstructured">
                                     <item0
@@ -40,7 +42,8 @@
                             </entry1>
                             <entry2
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry">
+                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
+                                eventTitle="Men's 100 Dash">
                                 <eventWinnerList
                                     jcr:primaryType="nt:unstructured">
                                     <item0
@@ -55,7 +58,8 @@
                             </entry2>
                             <entry3
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry">
+                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
+                                eventTitle="Men's 50m Dash">
                                 <eventWinnerList
                                     jcr:primaryType="nt:unstructured">
                                     <item0
@@ -75,6 +79,74 @@
                         sling:resourceType="exercise/components/content/eventWinnerListTab"
                         title="Day 02"
                         subtitle="19 July">
+                        <tabEntry
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <entry1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
+                                eventTitle="Men's 350 Dash">
+                                <eventWinnerList
+                                    jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Aniket Singh Pathania"
+                                        position="1st Postiton"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Aniket Singh Pathania"
+                                        position="2nd Postiton"/>
+                                </eventWinnerList>
+                            </entry1>
+                            <entry2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
+                                eventTitle="Men's 100 Dash">
+                                <eventWinnerList
+                                    jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Aniket Singh Pathania"
+                                        position="1st Postiton"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Aniket Singh Pathania"
+                                        position="2nd Postiton"/>
+                                </eventWinnerList>
+                            </entry2>
+                            <entry3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
+                                eventTitle="Men's 50m Dash">
+                                <eventWinnerList
+                                    jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Aniket Singh Pathania"
+                                        position="1st Postiton"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Aniket Singh Pathania"
+                                        position="2nd Postiton"/>
+                                </eventWinnerList>
+                            </entry3>
+                            <entry4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="exercise/components/content/eventWinnerListTabEntry"
+                                eventTitle="Men's 50m Dash">
+                                <eventWinnerList
+                                    jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Aniket Singh Pathania"
+                                        position="1st Postiton"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        name="Aniket Singh Pathania"
+                                        position="2nd Postiton"/>
+                                </eventWinnerList>
+                            </entry4>
+                        </tabEntry>
                     </tab2>
                     <tab3
                         jcr:primaryType="nt:unstructured"

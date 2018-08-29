@@ -11,338 +11,41 @@
 
     <div class="tab-comp">
         <ul class="nav nav-tabs">
-            <li data-sly-list.tab="${eventWinnerList.eventWinnerListTabs}">
-                <a data-toggle="tab" href="#tab1" class="active show">
-                    <p>Day 01</p>
-                    <h3>18 July</h3>
-                </a>
-            </li>
-            <li>
-                <a data-toggle="tab" href="#tab2">
-                    <p>Day 02</p>
-                    <h3>19 July</h3>
-                </a>
-            </li>
-            <li>
-                <a data-toggle="tab" href="#tab3">
-                    <p>Day 03</p>
-                    <h3>20 July</h3>
-                </a>
-            </li>
+            <sly data-sly-list="${eventWinnerList.eventWinnerTabs}">
+                <li>
+                    <a data-toggle="tab" href="#tab${itemList.index}">
+                        <p>${item.title}</p>
+                        <h3>${item.subtitle}</h3>
+                    </a>
+                </li>
+            </sly>
         </ul>
+    </div>
+
+    <div class="tab-content">
+        <sly data-sly-list="${eventWinnerList.eventWinnerTabs}">
+            <div id="tab${itemList.index}" class="tab-pane fade">
+                <ul class="accordion">
+                    <sly data-sly-list.tabEntry="${item.eventWinnerTabEntries}">
+                        <li class="popular_question">
+                            <div class="acc-tab active"><span>${tabEntry.eventTitle}</span></div>
+                            <div class="acc-content">
+                                <div class="event-win-content">
+                                    <ul class="event-win-list">
+                                        <sly data-sly-list.tabEntryItem="${tabEntry.eventWinnerTabEntryItems}">
+                                            <li>
+                                            <h5>${tabEntryItem.name}</h5>
+                                            <p>${tabEntryItem.position}</p>
+                                        </li>
+                                        </sly>
+                                    </ul>
+                                    <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </sly>
+                </ul>
+            </div>
+        </sly>
     </div>
 </sly>
-
-
-<h2 class="text-heading">${properties.title}</h2>
-
-<div class="tab-comp">
-    <ul class="nav nav-tabs">
-        <li>
-            <a data-toggle="tab" href="#tab1" class="active show">
-                <p>Day 01</p>
-                <h3>18 July</h3>
-            </a>
-        </li>
-        <li>
-            <a data-toggle="tab" href="#tab2">
-                <p>Day 02</p>
-                <h3>19 July</h3>
-            </a>
-        </li>
-        <li>
-            <a data-toggle="tab" href="#tab3">
-                <p>Day 03</p>
-                <h3>20 July</h3>
-            </a>
-        </li>
-    </ul>
-</div>
-
-<div class="tab-content">
-    <div id="tab1" class="tab-pane fade active show">
-        <ul class="accordion">
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-    </div>
-
-    <div id="tab2" class="tab-pane fade">
-        <ul class="accordion">
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div id="tab3" class="tab-pane fade">
-        <ul class="accordion">
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-            <li class="popular_question">
-                <div class="acc-tab active"><span>Men’s 350(Expert)</span></div>
-                <div class="acc-content">
-                    <div class="event-win-content">
-                        <ul class="event-win-list">
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>2st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>1st Position</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                            <li>
-                                <h5>Holeshot</h5>
-                                <p>Aniket Singh Pathania</p>
-                            </li>
-                        </ul>
-                        <div class="event-win-list-img"><img srcset="../../global/images/rides-pre-slide-01.jpg" alt="Royal Enfield"></div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
