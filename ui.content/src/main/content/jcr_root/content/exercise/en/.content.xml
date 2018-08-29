@@ -9,9 +9,32 @@
         <par
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
-            <text
+            <eventWinner
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="exercise/components/content/eventWinnerList"/>
+                sling:resourceType="exercise/components/content/eventWinnerList">
+                <tab
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="exercise/components/content/eventWinnerListTab"
+                        title="Day 01"
+                        subtitle="18 July">
+                    </tab1>
+                    <tab2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="exercise/components/content/eventWinnerListTab"
+                        title="Day 02"
+                        subtitle="19 July">
+                    </tab2>
+                    <tab3
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="exercise/components/content/eventWinnerListTab"
+                        title="Day 03"
+                        subtitle="20 July">
+                    </tab3>
+                </tab>
+            </eventWinner>
         </par>
         <image jcr:primaryType="nt:unstructured">
             <file/>
