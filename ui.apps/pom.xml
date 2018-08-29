@@ -120,10 +120,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <!-- OSGi Dependencies -->
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>uber-jar</artifactId>
-            <classifier>apis</classifier>
+            <classifier>obfuscated-apis</classifier>
         </dependency>
 
         <dependency>

@@ -96,11 +96,12 @@
             <type>bundle</type>
             <scope>provided</scope>
         </dependency>
-        
+
+        <!-- OSGi Dependencies -->
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>uber-jar</artifactId>
-            <classifier>apis</classifier>
+            <classifier>obfuscated-apis</classifier>
             <scope>provided</scope>
         </dependency>
     </dependencies>

@@ -4,6 +4,11 @@
     <sly data-sly-resource="${'tab' @ resourceType='wcm/foundation/components/responsivegrid' }"/>
 </sly>
 
+<sly data-sly-test="${!wcmmode.edit}">
+    <sly data-sly-use.eventWinnerList="in.shabhushan.core.components.EventWinnerListModel"/>
+
+    Event Winner list is ${eventWinnerList.eventWinnerListTabs}
+</sly>
 
 
 <h2 class="text-heading">${properties.title}</h2>

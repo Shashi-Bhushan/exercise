@@ -504,15 +504,13 @@
                 <version>1.5.11</version>
                 <scope>provided</scope>
             </dependency>
-            <!-- Apache Sling Dependencies -->
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>uber-jar</artifactId>
-                <version>6.2.0</version>
-                <classifier>apis</classifier>
+                <version>6.3.0</version>
+                <classifier>obfuscated-apis</classifier>
                 <scope>provided</scope>
             </dependency>
-
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.models.api</artifactId>
